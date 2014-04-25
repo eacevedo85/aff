@@ -4,7 +4,7 @@ Class User extends CI_Model{
 	 *	Consulta la db para recuperar el registro
 	 */
 	function login( $username, $password ){
-    	$this->db->select( 'id, user, pass, id_menu_grupo' );
+    	$this->db->select( 'id, user, pass' );
 	   $this->db->from( 'users' );
 	   $this->db->where( 'user', $username );
 	   $this->db->where( 'pass', MD5( $password ) );
