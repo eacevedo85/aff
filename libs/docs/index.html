@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<!-- Meta, title, CSS, favicons, etc. -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Bootstrap, a sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.">
+		<meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, bootstrap, front-end, frontend, web development">
+		<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+		<title>CSS &middot; Bootstrap</title>
+		<!-- Bootstrap core CSS -->
+		<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<!-- Documentation extras -->
+		<link href="../bootstrap/css/docs.min.css" rel="stylesheet">
+		<!--[if lt IE 9]><script src="../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<link rel="stylesheet" href="../highlight/styles/monokai_sublime.css">
+		
+	</head>
+	<body>
+		<!-- Docs page layout -->
+		<div class="container bs-docs-container">
+			<div class="row">
+				<div class="col-md-9" role="main">
+					<!-- Header
+					================================================== -->
+					<div class="bs-docs-section">
+						<h1 id="header" class="page-header">Header</h1>
+						<h3 id="headerCss">CSS</h1>
+						<p>Usar la libreria LIB_JS para poder agregar sus scripts en el controlador</p>
+						<pre><code class="html">&lt;?php 
+$header[ 'css' ] = TRUE;
+$header[ 'lib_css' ] = array(
+	'&lt;link href=" ' . base_url() . 'libs/css/style.css" rel="stylesheet" ' ); 
+?&gt;
+$this-&gt;load-&gt;view( 'header', $header );</code></pre>
+					</div>
+					<!-- Footer
+					================================================== -->
+					<div class="bs-docs-section">
+						<h1 id="footer" class="page-header">Footer</h1>
+						<h3 id="footerLibJs">Lib JS</h1>
+						<p>Usar la libreria LIB_JS para poder agregar sus scripts en el controlador</p>
+						<pre><code class="html">&lt;?php 
+$footer[ 'libs' ] = TRUE;
+$footer[ 'lib_js' ] = array(
+	'&lt;script src=" ' . base_url() . 'libs/js/jquery.validate.js"&gt;&lt;/script&gt;' ); 
+?&gt;</code></pre>
+						<h3 id="footerPhp">PHP</h3>
+						<p>Agrega vistas nuevas en PHP, su uso puede servir para generar archivos de Javascript con contenido que ejecute PHP</p>
+						<pre><code class="php">&lt;?php 
+$footer[ 'php' ] = TRUE;
+$footer[ 'lib_php' ][] = 'js/usuarios.js.php';
+?&gt;</code></pre>
+						<h3 id="footerDebug">Debug</h3>
+						<p>Activar el debug</p>
+<pre><code class="php">&lt;?php 
+$footer[ 'debug' ] = TRUE;
+$this-&gt;load-&gt;view( 'footer', $footer );
+?&gt;</code></pre>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="bs-docs-sidebar hidden-print" role="complementary">
+						<ul class="nav bs-docs-sidenav">
+							<li>
+								<a href="#header">Header</a>
+								<ul class="nav">
+									<li><a href="#headerCss">CSS</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#footer">Footer</a>
+								<ul class="nav">
+									<li><a href="#footerLibJs">Lib JS</a></li>
+									<li><a href="#footerPhp">Lib PHP</a></li>
+									<li><a href="#footerDebug">Debug</a></li>
+								</ul>
+							</li>							
+						</ul>
+						<a class="back-to-top" href="#top">
+							Back to top
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Footer
+		================================================== -->
+		<footer class="bs-docs-footer" role="contentinfo">
+		</footer>
+		<!-- Bootstrap core JavaScript
+		================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="../bootstrap/js/bootstrap.min.js"></script>
+		<script src="../bootstrap/js/docs.min.js"></script>
+		<script src="../highlight/highlight.pack.js"></script>
+		<script>hljs.initHighlightingOnLoad();</script>
+	</body>
+</html>

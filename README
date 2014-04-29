@@ -1,0 +1,23 @@
+echo '<pre>' . print_r( $this->db->last_query(), true ) . '</pre>';
+
+### Actualizar el repositorio en linux
+		git clone git@github.com:Username/InsertCoin-Docs.git
+
+### Subida de archivos
+		* cd /ruta/carpeta
+		* git init
+		* git add .
+		* git commit -m 'esto es un comentario'
+		* git remote add origin git@github.com:crashkike/master.git
+		* git remote rm origin
+		* git remote add origin git@github.com:crashkike/master.git
+		* git push -u origin master
+
+== Changelog ==
+
+== 1.0 == 29/04/2014
+*	Se inicializo el programa 'AFF'
+
+
+
+== MODULOS ==
