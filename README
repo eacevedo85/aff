@@ -1,5 +1,5 @@
 echo '<pre>' . print_r( $this->db->last_query(), true ) . '</pre>';
-
+e.acevedo.catalan editando
 ### Actualizar el repositorio en linux
 		git clone git@github.com:Username/InsertCoin-Docs.git
 
